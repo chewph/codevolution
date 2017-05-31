@@ -1,9 +1,12 @@
 import { RouterModule, Routes } from '@angular/router';
+import { InputOutputComponent } from '../inputoutput/input-output.component';
+import { TemplateDrivenFormComponent } from '../forms/template-driven/template-driven-form/template-driven-form.component';
+
 
 export const ROUTES: Routes = [
-	{ path: '', redirectTo: '/Dashboard', pathMatch: 'full' },
-	{ path: 'InputOutput', component: HeroesComponent },
-	{ path: 'detail/:id',component: HeroDetailComponent }
+	{ path: '', redirectTo: '', pathMatch: 'full' },
+	{ path: 'inputoutput', component: InputOutputComponent },
+	{ path: 'template-driven-forms',component: TemplateDrivenFormComponent }
 ]
 	/*{ path: 'Dashboard', component: DashboardComponent },
 	{

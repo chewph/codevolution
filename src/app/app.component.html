@@ -1,3 +1,39 @@
-<h1>
-  {{title}}
-</h1>
+<h2>
+	{{title}}
+</h2>
+
+<section id="top-section"></section>
+<div class="aTextDecor">
+	<ul>
+
+		<li>
+			<nav><a routerLink="/inputoutput" routerLinkActive="active">Inputs and Outputs</a></nav>
+			<!--<h3><a routerLink="/inputoutput" routerLinkActive="active">Inputs and Outputs</a></h3>-->
+			<p>
+				<b>simple-eg/ShowHideComponent</b> <br>
+				1. Using checkbox to set and change value of ShowHideComponent<br>
+				2. *ngIf else to show alternate templates
+
+			</p>
+		</li>
+		<li>
+			<nav><a routerLink="/template-driven-forms">Template Driven Forms</a></nav>
+			<!--<h3><a routerLink="/template-driven-forms">Template Driven Forms</a></h3>-->
+			<p>
+				<b>simple-eg/GetComponentPropertyComponent</b> <br>
+				1. Declaring and instantiating objects from plain classes (Hero and Heorine) <br>
+				2. Using of arrays. <br>
+				3. Accessing created objects from html
+			</p>
+		</li>
+	</ul>
+</div>
+
+<hr>
+
+
+<section id="display-section"></section>
+<div id="display">
+	<router-outlet></router-outlet>
+</div>
+<a scrollTo href="#top-section">Back to top</a>
