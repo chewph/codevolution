@@ -9,6 +9,10 @@ import { TemplateDrivenFormComponent } from './forms/template-driven/tdf/templat
 import { ParentComponent } from './inputoutput/parent.component';
 import { ChildComponent } from './inputoutput/child.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { TdfValIComponent } from './forms/template-driven/tdf-val-i/tdf-val-i.component';
+import { TdfValIIComponent } from './forms/template-driven/tdf-val-ii/tdf-val-ii.component';
+import { ModelDrivenFormComponent } from './forms/model-driven-form/mdf/model-driven-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
 	declarations: [
@@ -17,12 +21,16 @@ import { PipesComponent } from './pipes/pipes.component';
 		ParentComponent,
 		ChildComponent,
 		PipesComponent,
+		TdfValIComponent,
+		TdfValIIComponent,
+		ModelDrivenFormComponent,
 	],
 	imports: [
 		BrowserModule,
 		FormsModule,
 		HttpModule,
-		AppRoutingModule
+		AppRoutingModule,
+		ReactiveFormsModule
 	],
 	providers: [],
 	bootstrap: [ AppComponent ]

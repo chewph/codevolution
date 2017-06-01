@@ -7,7 +7,6 @@
 	<ul>
 		<li>
 			<nav><a routerLink="/inputoutput" routerLinkActive="active">Inputs and Outputs</a></nav>
-			<!--<h3><a routerLink="/inputoutput" routerLinkActive="active">Inputs and Outputs</a></h3>-->
 			<p>
 				<b>inputoutput/ParentComponent and Child Component</b> <br>
 				1. Passing values from parent to child components using inputs and data binding<br>
@@ -17,20 +16,50 @@
 		</li>
 		<li>
 			<nav><a routerLink="/pipes">Pipes</a></nav>
-			<!--<h3><a routerLink="/template-driven-forms">Template Driven Forms</a></h3>-->
 			<p>
 				<b>pipes/PipesComponent</b> <br>
 				1. Using Pipes to format numeric, currency and date values <br>
 			</p>
 		</li>
 		<li>
-			<nav><a routerLink="/template-driven-forms">Template Driven Forms</a></nav>
-			<!--<h3><a routerLink="/template-driven-forms">Template Driven Forms</a></h3>-->
+			<nav><a routerLink="/template-driven-form">Template Driven Form</a></nav>
 			<p>
 				<b>forms/tdf/TemplateDrivenFormComponent</b> <br>
-				1. Declaring and instantiating objects from plain classes (Hero and Heorine) <br>
-				2. Using of arrays. <br>
-				3. Accessing created objects from html
+				1. Create ngForm, handling (ngSubmit) event, ngModelGroup <br>
+				2. Banana in a box two-way binding [(email)] <br>
+			</p>
+		</li>
+		<li>
+			<nav><a routerLink="/tdf-val-i">TDF Validation I</a></nav>
+			<p>
+				<b>forms/tdf-val-i/TdfValIComponent</b> <br>
+				1. Using input required class alert alert danger<br>
+				2. Interpolate nameRef.classname to show states of validation<br>
+				3. styles - input.ng-invalid <br>
+				4. Assign input name with ngModel and use div hidden=ngModel.valid || pristine
+			</p>
+		</li>
+		<li>
+			<nav><a routerLink="/tdf-val-ii">TDF Validation II</a></nav>
+			<p>
+				<b>forms/tdf-val-i/TdfValIIComponent</b> <br>
+				1. Using minlength<br>
+				2. Div *ngIf processed only when there is <b>nameRef.error, nameRef.dirty or touched</b><br>
+				3. Div hidden if nameRef.errors.required ie. values entered <br>
+				4. Div hidden if nameRef.errors.minLength and maxLength ie. min or max length entered <br>
+				5. Pattern matching validation.
+			</p>
+		</li>
+		<li>
+			<nav><a routerLink="/model-driven-form">Model Driven Form</a></nav>
+			<p>
+				<b>forms/model-driven-form/mdf/ModelDrivenFormComponent</b> <br>
+				1. Instantiating FormGroup and FormControl in componentbr><br>
+				2. Using <b>[FormGroup]</b> = variable of form group in component, setting <b>formControlName</b> and
+				<b>formGroupName</b><br>
+				3. <b>Validators array</b> => <b>[Validators.required, minLength(), maxLength() and pattern()]</b><br>
+				4. Using 3 separate <b>*ngIf="userForm.controls['name'].hasError('required'), 'minlength'"</b>
+				5. Button [disabled]
 			</p>
 		</li>
 	</ul>

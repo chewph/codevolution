@@ -45,6 +45,6 @@
 			</div>
 		</div>
 
-		<button type="submit" class="btn btn-primary">Submit</button>
+		<button [disabled]="!userForm.form.valid" type="submit" class="btn btn-primary">Submit</button>
 	</form>
 </div>
