@@ -6,14 +6,17 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-route/app-routing.module';
 import { AppComponent } from './app.component';
 import { TemplateDrivenFormComponent } from './forms/template-driven/template-driven-form/template-driven-form.component';
-import { InputOutputComponent } from './inputoutput/input-output.component';
-
+import { ParentComponent } from './inputoutput/parent.component';
+import { ChildComponent } from './inputoutput/child.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		TemplateDrivenFormComponent,
-		InputOutputComponent,
+		ParentComponent,
+		ChildComponent,
+		PipesComponent,
 	],
 	imports: [
 		BrowserModule,

@@ -1,11 +1,13 @@
 import { RouterModule, Routes } from '@angular/router';
-import { InputOutputComponent } from '../inputoutput/input-output.component';
+import { ParentComponent } from '../inputoutput/parent.component';
+import { PipesComponent } from  '../pipes/pipes.component';
 import { TemplateDrivenFormComponent } from '../forms/template-driven/template-driven-form/template-driven-form.component';
 
 
 export const ROUTES: Routes = [
 	{ path: '', redirectTo: '', pathMatch: 'full' },
-	{ path: 'inputoutput', component: InputOutputComponent },
+	{ path: 'inputoutput', component: ParentComponent },
+	{ path: 'pipes', component: PipesComponent },
 	{ path: 'template-driven-forms',component: TemplateDrivenFormComponent }
 ]
 	/*{ path: 'Dashboard', component: DashboardComponent },
