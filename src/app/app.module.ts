@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-route/app-routing.module';
 import { AppComponent } from './app.component';
-import { TemplateDrivenFormComponent } from './forms/template-driven/template-driven-form/template-driven-form.component';
+import { TemplateDrivenFormComponent } from './forms/template-driven/tdf/template-driven-form.component';
 import { ParentComponent } from './inputoutput/parent.component';
 import { ChildComponent } from './inputoutput/child.component';
 import { PipesComponent } from './pipes/pipes.component';

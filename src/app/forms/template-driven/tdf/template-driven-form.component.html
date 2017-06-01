@@ -1,0 +1,30 @@
+<div class="container">
+	<h2>Template Driven Form</h2>
+	<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+		<div class="form-group">
+			<label>Name</label>
+			<input type="text" class="form-control" name="name" [ngModel]="myName">
+		</div>
+		<div class="form-group">
+			<label>Email</label>
+			<input type="text" class="form-control" name="email" [(ngModel)]="email">
+			{{ email }}
+		</div>
+		<div ngModelGroup="address"> <!--address group-->
+			<div class="form-group">
+				<label>Street</label>
+				<input type="text" class="form-control" name="street" ngModel>
+			</div>
+			<div class="form-group">
+				<label>City</label>
+				<input type="text" class="form-control" name="city" ngModel>
+			</div>
+			<div class="form-group">
+				<label>PostalCode</label>
+				<input type="text" class="form-control" name="postalcode" ngModel>
+			</div>
+		</div>
+
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>

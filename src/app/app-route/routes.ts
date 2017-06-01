@@ -1,7 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 import { ParentComponent } from '../inputoutput/parent.component';
 import { PipesComponent } from  '../pipes/pipes.component';
-import { TemplateDrivenFormComponent } from '../forms/template-driven/template-driven-form/template-driven-form.component';
+import { TemplateDrivenFormComponent } from '../forms/template-driven/tdf/template-driven-form.component';
 
 
 export const ROUTES: Routes = [
