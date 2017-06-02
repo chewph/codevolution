@@ -5,10 +5,10 @@ import 'rxjs/add/operator/catch';
 import { Observable } from "rxjs/Observable";
 import 'rxjs/add/observable/throw';
 
-@Injectable()
+@Injectable() // Used to tell Angular that there is a component that needs to be injected into it.
 export class EmployeeHttpService{
 
-	private _url: string = "assets/apidata/employeedata1.json";
+	private _url: string = "assets/apidata/employeedata.json";
 
 	constructor(private _http: Http){
 
