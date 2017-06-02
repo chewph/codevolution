@@ -51,15 +51,32 @@
 			</p>
 		</li>
 		<li>
-			<nav><a routerLink="/model-driven-form">Model Driven Form</a></nav>
+			<nav><a routerLink="/model-driven-form">Model Driven Form with FormBuilder</a></nav>
 			<p>
-				<b>forms/model-driven-form/mdf/ModelDrivenFormComponent</b> <br>
+				<b>forms/model-driven-form/ModelDrivenFormComponent</b> <br>
 				1. Instantiating FormGroup and FormControl in componentbr><br>
 				2. Using <b>[FormGroup]</b> = variable of form group in component, setting <b>formControlName</b> and
 				<b>formGroupName</b><br>
 				3. <b>Validators array</b> => <b>[Validators.required, minLength(), maxLength() and pattern()]</b><br>
 				4. Using 3 separate <b>*ngIf="userForm.controls['name'].hasError('required'), 'minlength'"</b>
-				5. Button [disabled]
+				5. Button <b>[disabled]</b>
+				6. Using <b>FormBuilder</b>
+			</p>
+		</li>
+		<li>
+			<nav><a routerLink="/service">Simple Service</a></nav>
+			<p>
+				<b>service/EmployeeMainComponent</b> <br>
+				1. Create <b>EmployeeService</b> - @Injectable export class<br>
+				2. EmployeeMainComponent -> EmployeeListComponent <br>
+			</p>
+		</li>
+		<li>
+			<nav><a routerLink="/http">Fetch HTTP Data</a></nav>
+			<p>
+				<b>service/EmployeeMainHttpComponent</b> <br>
+				1. Create <b>EmployeeService</b> - @Injectable export class<br>
+				2. EmployeeMainComponent -> EmployeeListComponent <br>
 			</p>
 		</li>
 	</ul>

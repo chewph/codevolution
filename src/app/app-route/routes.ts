@@ -4,7 +4,9 @@ import { PipesComponent } from  '../pipes/pipes.component';
 import { TemplateDrivenFormComponent } from '../forms/template-driven/tdf/template-driven-form.component';
 import { TdfValIComponent } from '../forms/template-driven/tdf-val-i/tdf-val-i.component';
 import { TdfValIIComponent } from '../forms/template-driven/tdf-val-ii/tdf-val-ii.component';
-import { ModelDrivenFormComponent } from "../forms/model-driven-form/mdf/model-driven-form.component";
+import { ModelDrivenFormComponent } from "../forms/model-driven-form/model-driven-form.component";
+import { EmployeeMainComponent } from "../service/employee-main.component";
+import { EmployeeMainHttpComponent } from "../http/employee-main-http.component";
 
 
 export const ROUTES: Routes = [
@@ -14,7 +16,9 @@ export const ROUTES: Routes = [
 	{ path: 'template-driven-form',component: TemplateDrivenFormComponent },
 	{ path: 'tdf-val-i',component: TdfValIComponent },
 	{ path: 'tdf-val-ii',component: TdfValIIComponent },
-	{ path: 'model-driven-form',component: ModelDrivenFormComponent }
+	{ path: 'model-driven-form',component: ModelDrivenFormComponent },
+	{ path: 'service',component: EmployeeMainComponent },
+	{ path: 'http',component: EmployeeMainHttpComponent }
 ]
 	/*{ path: 'Dashboard', component: DashboardComponent },
 	{
