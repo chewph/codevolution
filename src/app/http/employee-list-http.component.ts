@@ -7,13 +7,12 @@ import { EmployeeHttpService } from "./employee-http.service";
 			<h3>Employee Http List</h3>
 			<ul *ngFor="let employee of employees">
 				<li>{{ employee.name }}</li>				
-			</ul>
-	
+			</ul>,
 			`,
 	styles: []
 })
 
-export class EmployeeListComponent implements OnInit{
+export class EmployeeListHttpComponent implements OnInit{
 	employees = [];
 
 	constructor(private _employeeHttpService: EmployeeHttpService){
@@ -22,6 +21,11 @@ export class EmployeeListComponent implements OnInit{
 	ngOnInit(){
 		this._employeeHttpService.getEmployees()
 			.subscribe(resEmployeeData => this.employees = resEmployeeData);
+			// 				x			y				z
+			/* x ==> Typeless input parameter
+			*  y ==> employees array
+			*  z ==> Assign x to employees array
+			*  */
 	}
 
 }

@@ -16,7 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { EmployeeListComponent } from './service/employee-list.component';
 import { EmployeeMainComponent } from './service/employee-main.component';
 import { EmployeeMainHttpComponent } from './http/employee-main-http.component';
-import { Employee}
+import { EmployeeListHttpComponent } from './http/employee-list-http.component';
 
 @NgModule({
 	declarations: [
@@ -30,7 +30,8 @@ import { Employee}
 		ModelDrivenFormComponent,
 		EmployeeListComponent,
 		EmployeeMainComponent,
-		EmployeeMainHttpComponent
+		EmployeeMainHttpComponent,
+		EmployeeListHttpComponent
 	],
 	imports: [
 		BrowserModule,
