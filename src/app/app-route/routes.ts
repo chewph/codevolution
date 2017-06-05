@@ -9,6 +9,7 @@ import { EmployeeMainComponent } from "../service/employee-main.component";
 import { EmployeeMainHttpComponent } from "../http/employee-main-http.component";
 import { DepartmentListComponent } from "../routing/department-list.component";
 import { EmployeeListRouteComponent } from "../routing/employee-list-route.component";
+import { DepartmentDetailComponent } from "../routing/department-detail.component";
 
 
 export const ROUTES: Routes = [
@@ -21,8 +22,10 @@ export const ROUTES: Routes = [
 	{ path: 'model-driven-form',component: ModelDrivenFormComponent },
 	{ path: 'service',component: EmployeeMainComponent },
 	{ path: 'http',component: EmployeeMainHttpComponent },
+	{ path: 'employees',component: EmployeeListRouteComponent },
 	{ path: 'departments',component: DepartmentListComponent },
-	{ path: 'employees',component: EmployeeListRouteComponent }
+	{ path: 'departments/:id',component: DepartmentDetailComponent }
+
 ]
 	/*{ path: 'Dashboard', component: DashboardComponent },
 	{

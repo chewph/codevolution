@@ -19,6 +19,7 @@ import { EmployeeMainHttpComponent } from './http/employee-main-http.component';
 import { EmployeeListHttpComponent } from './http/employee-list-http.component';
 import { DepartmentListComponent } from './routing/department-list.component';
 import { EmployeeListRouteComponent } from './routing/employee-list-route.component';
+import { DepartmentDetailComponent } from './routing/department-detail.component';
 
 @NgModule({
 	declarations: [
@@ -35,7 +36,8 @@ import { EmployeeListRouteComponent } from './routing/employee-list-route.compon
 		EmployeeMainHttpComponent,
 		EmployeeListHttpComponent,
 		DepartmentListComponent,
-		EmployeeListRouteComponent
+		EmployeeListRouteComponent,
+		DepartmentDetailComponent
 
 	],
 	imports: [

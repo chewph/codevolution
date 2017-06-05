@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
 	selector: 'department-list',
 	template: `
 		<h3>Department List</h3>
 		<ul class="items">
-			<li *ngFor="let department of departments">
+			<li (click)="onSelect(department)" *ngFor="let department of departments">
 				<span class="badge">{{ department.id }}</span> {{ department.name }}
 			</li>
 		</ul>`,
@@ -20,4 +21,12 @@ export class DepartmentListComponent{
 		{ "id": 5, "name": "Bootstrap" },
 	]
 
+	constructor(private router: Router){
+
+	}
+
+
+	onSelect(department) {
+		this.router.navigate(['/departments', department.id]);
+	}
 }
