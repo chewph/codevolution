@@ -17,6 +17,8 @@ import { EmployeeListComponent } from './service/employee-list.component';
 import { EmployeeMainComponent } from './service/employee-main.component';
 import { EmployeeMainHttpComponent } from './http/employee-main-http.component';
 import { EmployeeListHttpComponent } from './http/employee-list-http.component';
+import { DepartmentListComponent } from './routing/department-list.component';
+import { EmployeeListRouteComponent } from './routing/employee-list-route.component';
 
 @NgModule({
 	declarations: [
@@ -31,7 +33,10 @@ import { EmployeeListHttpComponent } from './http/employee-list-http.component';
 		EmployeeListComponent,
 		EmployeeMainComponent,
 		EmployeeMainHttpComponent,
-		EmployeeListHttpComponent
+		EmployeeListHttpComponent,
+		DepartmentListComponent,
+		EmployeeListRouteComponent
+
 	],
 	imports: [
 		BrowserModule,

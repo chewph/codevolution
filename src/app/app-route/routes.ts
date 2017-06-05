@@ -7,6 +7,8 @@ import { TdfValIIComponent } from '../forms/template-driven/tdf-val-ii/tdf-val-i
 import { ModelDrivenFormComponent } from "../forms/model-driven-form/model-driven-form.component";
 import { EmployeeMainComponent } from "../service/employee-main.component";
 import { EmployeeMainHttpComponent } from "../http/employee-main-http.component";
+import { DepartmentListComponent } from "../routing/department-list.component";
+import { EmployeeListRouteComponent } from "../routing/employee-list-route.component";
 
 
 export const ROUTES: Routes = [
@@ -18,7 +20,9 @@ export const ROUTES: Routes = [
 	{ path: 'tdf-val-ii',component: TdfValIIComponent },
 	{ path: 'model-driven-form',component: ModelDrivenFormComponent },
 	{ path: 'service',component: EmployeeMainComponent },
-	{ path: 'http',component: EmployeeMainHttpComponent }
+	{ path: 'http',component: EmployeeMainHttpComponent },
+	{ path: 'departments',component: DepartmentListComponent },
+	{ path: 'employees',component: EmployeeListRouteComponent }
 ]
 	/*{ path: 'Dashboard', component: DashboardComponent },
 	{
