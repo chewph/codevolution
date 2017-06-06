@@ -24,7 +24,8 @@ export const ROUTES: Routes = [
 	{ path: 'http',component: EmployeeMainHttpComponent },
 	{ path: 'employees',component: EmployeeListRouteComponent },
 	{ path: 'departments',component: DepartmentListComponent },
-	{ path: 'departments/:id',component: DepartmentDetailComponent }
+	{ path: 'departments/:id',component: DepartmentDetailComponent },
+	{ path: '**',component: DepartmentDetailComponent }
 
 ]
 	/*{ path: 'Dashboard', component: DashboardComponent },
