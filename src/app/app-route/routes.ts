@@ -10,10 +10,12 @@ import { EmployeeMainHttpComponent } from "../http/employee-main-http.component"
 import { DepartmentListComponent } from "../routing/department-list.component";
 import { EmployeeListRouteComponent } from "../routing/employee-list-route.component";
 import { DepartmentDetailComponent } from "../routing/department-detail.component";
+import { AuxComponent } from "../routing/aux/aux.component";
 
 
 export const ROUTES: Routes = [
 	{ path: '', redirectTo: '/', pathMatch: 'full' },
+	{ path: 'aux-path',component: AuxComponent, outlet: 'aux-outlet-name' },
 	{ path: 'inputoutput', component: ParentComponent },
 	{ path: 'pipes', component: PipesComponent },
 	{ path: 'template-driven-form',component: TemplateDrivenFormComponent },

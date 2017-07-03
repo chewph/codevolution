@@ -20,6 +20,10 @@ import { EmployeeListHttpComponent } from './http/employee-list-http.component';
 import { DepartmentListComponent } from './routing/department-list.component';
 import { EmployeeListRouteComponent } from './routing/employee-list-route.component';
 import { DepartmentDetailComponent } from './routing/department-detail.component';
+import { AuxComponent } from './routing/aux/aux.component';
+import { Ng2SimplePageScrollModule } from 'ng2-simple-page-scroll/ng2-simple-page-scroll';
+import { ScrollToModule } from 'ng2-scroll-to';
+
 
 @NgModule({
 	declarations: [
@@ -37,15 +41,16 @@ import { DepartmentDetailComponent } from './routing/department-detail.component
 		EmployeeListHttpComponent,
 		DepartmentListComponent,
 		EmployeeListRouteComponent,
-		DepartmentDetailComponent
-
+		DepartmentDetailComponent,
+		AuxComponent
 	],
 	imports: [
 		BrowserModule,
 		FormsModule,
 		HttpModule,
 		AppRoutingModule,
-		ReactiveFormsModule
+		ReactiveFormsModule,
+		ScrollToModule
 	],
 	providers: [],
 	bootstrap: [ AppComponent ]
