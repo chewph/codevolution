@@ -20,9 +20,13 @@ import { EmployeeListHttpComponent } from './http/employee-list-http.component';
 import { DepartmentListComponent } from './routing/department-list.component';
 import { EmployeeListRouteComponent } from './routing/employee-list-route.component';
 import { DepartmentDetailComponent } from './routing/department-detail.component';
-import { AuxComponent } from './routing/aux/aux.component';
+import { Component1 } from './routing/multi-route/component1';
 import { Ng2SimplePageScrollModule } from 'ng2-simple-page-scroll/ng2-simple-page-scroll';
 import { ScrollToModule } from 'ng2-scroll-to';
+import { Component2 } from './routing/multi-route/component2';
+import { MainComponent } from './routing/multi-route/main.component';
+import { TopMenuComponent } from './routing/multi-route/top-menu/top-menu.component';
+import { ContentComponent } from './routing/multi-route/content/content.component';
 
 
 @NgModule({
@@ -42,7 +46,11 @@ import { ScrollToModule } from 'ng2-scroll-to';
 		DepartmentListComponent,
 		EmployeeListRouteComponent,
 		DepartmentDetailComponent,
-		AuxComponent
+		Component1,
+		Component2,
+		MainComponent,
+		TopMenuComponent,
+		ContentComponent
 	],
 	imports: [
 		BrowserModule,

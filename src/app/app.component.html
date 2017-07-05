@@ -4,6 +4,7 @@
 
 <section id="top-section"></section>
 <div class="aTextDecor">
+	<nav><a scrollTo scrollTargetSelector="#last-section">Lastest Sample</a></nav>
 	<ul>
 		<li>
 			<nav><a routerLink="/inputoutput" routerLinkActive="active">Inputs and Outputs</a></nav>
@@ -99,17 +100,31 @@
 
 			</p>
 		</li>
+
 		<li>
 			<nav>
-				<a [routerLink]="[{ outlets: { 'aux-outlet-name': ['aux-path'] } }]">Aux Component</a>
-				<a simplePageScroll href="#aux-route">Simple Page Scroll to aux router outlet</a>
-				<a scrollTo scrollableElementSelector="#auxdiv">Scroll to aux router using div id</a>
-				<a scrollTo scrollTargetSelector="#auxref">Scroll to aux router using section id</a>
-				<a scrollTo scrollYTarget="0">Go to top using scrollYTarget</a>
+				<a [routerLink]="[{ outlets: { 'component1-outlet-name': ['component1-path'] } }]">Component 1</a>
+				<a [routerLink]="[{ outlets: { 'component2-outlet-name': ['component2-path'] } }]">Component 2</a>
+				<a simplePageScroll href="#aux-route">Simple Page Scroll</a>
+				<!--<a scrollTo scrollableElementSelector="#auxdiv">Scroll to aux router using div id</a>-->
+				<a scrollTo scrollTargetSelector="#aux-route">Scroll To</a>
+				<a scrollTo scrollYTarget="0">Go To Top</a>
 			</nav>
 			<p>
-				Multiple router outlets using named routers<br>
+				1. Multiple router outlets using named routers<br>
+				2. ScrollTo component
 
+			</p>
+		</li>
+
+		<li>
+			<section id="last-section"></section>
+			<nav>
+				<a [routerLink]="['mainPage',
+					{ outlets: { 'topMenu-outlet': ['topMenuPath'], 'content-outlet': ['contentPath']  } }]">Main</a>
+			</nav>
+			<p>
+				1. Main content with top and content router outlets<br>
 			</p>
 		</li>
 	</ul>
@@ -122,19 +137,13 @@
 	<router-outlet></router-outlet>
 </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<section id="aux-route"></section>
+<router-outlet name="component1-outlet-name"></router-outlet>
+<router-outlet name="component2-outlet-name"></router-outlet>
 
-<div style="color: green; margin-top: 1rem;">Aux Outlet:</div>
 
-<section id="auxref"></section>
-<div id="auxdiv" style="border: 2px solid blue; padding: 1rem; width:300px">
-	<router-outlet name="aux-outlet-name"></router-outlet>
-</div>
-<br>
+<div style="height:2000px;"></div>
+
+<section id="aux-route"></section><p>Scroll To Here</p>
 <a scrollTo href="#top-section">Back to top</a>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div style="height:1000px;"></div>
