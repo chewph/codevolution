@@ -120,6 +120,8 @@
 		<li>
 			<section id="last-section"></section>
 			<nav>
+				<button (click)="goMainPage()">Go to Main Page</button>
+				<button (click)="goContent()">Go to Content Section</button>
 				<a [routerLink]="['mainPage',
 					{ outlets: { 'topMenu-outlet': ['topMenuPath'], 'content-outlet': ['contentPath']  } }]">Main</a>
 			</nav>
