@@ -6,7 +6,7 @@ import { ChildComponent } from './child.component';
 	//templateUrl: './parent.component.html',
 	template: `<h2>Parent App Component</h2>
 			<label>Enter Parent App Value</label>
-			<input type="text" #parentText (keyup)="0">
+			<input type="text" #parentText (keyup)="0"> <!--parentText is here-->
 			<!--Dummy event to refresh view everytime key is pressed-->
 			<br>Value from Child App is: {{ childData }}
 			<child-app (childEvent)="childData=$event" [parentData]="parentText.value"></child-app>

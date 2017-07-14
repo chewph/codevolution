@@ -16,7 +16,7 @@ import { EmployeeService } from "./employee.service";
 export class EmployeeListComponent implements OnInit{
 	employees = [];
 
-	constructor(private _employeeService: EmployeeService){
+	constructor(private _employeeService: EmployeeService){ // injection takes place here
 	}
 
 	ngOnInit(){

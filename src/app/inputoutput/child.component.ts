@@ -1,4 +1,4 @@
-import { Component, EventEmitter } from '@angular/core';
+import { Component, Input, EventEmitter } from '@angular/core';
 
 @Component({
 	selector: 'child-app',
@@ -8,13 +8,15 @@ import { Component, EventEmitter } from '@angular/core';
 		<label>Enter Child App Value</label>
 		<input type="text" #childText (keyup)="onChange(childText.value)"> 
 		<br>
-		Value from Parent App is: {{ parentData }}
+		<!--Value from Parent App is: {{ parentData }}-->
+		Value from Parent App is: {{ data }}
 		`,
-	inputs: [`parentData`],
+	/*inputs: [`parentData`],*/
 	outputs: [`childEvent`]
 })
 
 export class ChildComponent{
+	@Input('parentData') data: string; // parentData input from parent
 	public parentData: string;
 	childEvent = new EventEmitter<string>();
 

@@ -1,9 +1,10 @@
 import { Injectable } from "@angular/core";
 
-//@Injectable()
+
 /*Injectable is to tell Angular that there is some dependancy on external components, which this class
-* doesn't have. So the @Injectable is not required here.
+* doesn't have. So the @Injectable is not required here. But it's added to ensure consistency and future-proofing
 * */
+@Injectable()
 export class EmployeeService{
 	getEmployees(){
 		return [
